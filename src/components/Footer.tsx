@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site, fullAddress } from "@/lib/site";
 
 const columns = [
@@ -28,9 +29,13 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-                DT
-              </span>
+              <Image
+                src="/logo.png"
+                alt="Double Twin Services SDN. BHD. logo"
+                width={44}
+                height={44}
+                className="h-11 w-11 rounded-full object-contain"
+              />
               <span className="text-base font-bold text-ink">
                 {site.company.legalName}
               </span>

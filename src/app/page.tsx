@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export default function HomePage() {
@@ -45,17 +46,16 @@ export default function HomePage() {
 
             {/* Corporate visual */}
             <div className="relative">
-              <div className="rounded-2xl border border-slate-100 bg-white p-2 shadow-xl shadow-slate-200/60">
-                <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 via-brand-700 to-brand-900">
-                  <div className="text-center text-white">
-                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 text-2xl font-bold backdrop-blur">
-                      DT
-                    </div>
-                    <p className="mt-4 text-sm font-medium uppercase tracking-[0.2em] text-white/80">
-                      Double Twin Services
-                    </p>
-                    <p className="text-xs text-white/60">SDN. BHD.</p>
-                  </div>
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-200/60 sm:p-10">
+                <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-white">
+                  <Image
+                    src="/logo.png"
+                    alt="Double Twin Services SDN. BHD. logo"
+                    width={360}
+                    height={360}
+                    priority
+                    className="h-auto w-2/3 max-w-[360px] object-contain"
+                  />
                 </div>
               </div>
             </div>

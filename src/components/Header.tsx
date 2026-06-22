@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -20,9 +21,14 @@ export default function Header() {
           className="flex items-center gap-3"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold tracking-tight text-white">
-            DT
-          </span>
+          <Image
+            src="/logo.png"
+            alt="Double Twin Services SDN. BHD. logo"
+            width={44}
+            height={44}
+            priority
+            className="h-11 w-11 rounded-full object-contain"
+          />
           <span className="flex flex-col leading-tight">
             <span className="text-sm font-bold text-ink sm:text-base">
               Double Twin Services
