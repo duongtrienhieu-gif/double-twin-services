@@ -78,6 +78,7 @@ export default function RootLayout({
     identifier: site.company.registrationNumber,
     address: {
       "@type": "PostalAddress",
+      streetAddress: `${site.contact.addressLine1}, ${site.contact.addressLine2}`,
       addressCountry: "MY",
       addressLocality: site.contact.city,
       addressRegion: site.contact.state,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, fullAddress } from "@/lib/site";
 
 const columns = [
   {
@@ -40,7 +40,26 @@ export default function Footer() {
               online product sales, commission sales and consumer goods
               distribution.
             </p>
-            <p className="mt-4 text-xs text-muted">
+            <address className="mt-4 max-w-md text-sm not-italic leading-relaxed text-muted">
+              {fullAddress}
+            </address>
+            <p className="mt-3 text-sm text-muted">
+              Tel:{" "}
+              <a
+                href={`tel:${site.contact.phoneHref}`}
+                className="hover:text-brand-600"
+              >
+                {site.contact.phone}
+              </a>
+              {" · "}Email:{" "}
+              <a
+                href={`mailto:${site.contact.email}`}
+                className="hover:text-brand-600"
+              >
+                {site.contact.email}
+              </a>
+            </p>
+            <p className="mt-3 text-xs text-muted">
               Registration No: {site.company.registrationNumber}
             </p>
           </div>

@@ -14,15 +14,17 @@ export const site = {
     foundedYear: 2025,
   },
   contact: {
-    // Placeholders — replace with verified business details.
+    // Business email — to be activated on the company domain.
     email: "info@doubletwinservices.com",
-    phone: "+60 0-0000 0000",
-    addressLine1: "[Business Address Line 1]",
-    addressLine2: "[Business Address Line 2]",
-    city: "Kuala Lumpur",
-    postcode: "00000",
-    state: "Wilayah Persekutuan",
+    phone: "+60 17-930 8556",
+    phoneHref: "+60179308556",
+    addressLine1: "No. 56A, Tingkat 1, Jalan Bahagia",
+    addressLine2: "Pekan Sekinchan",
+    city: "Sekinchan",
+    postcode: "45400",
+    state: "Selangor",
     country: "Malaysia",
+    hours: "Monday – Friday, 9:00 AM – 6:00 PM (MYT)",
   },
   // Used for canonical URLs, sitemap, robots, Open Graph.
   // Production domain (apex). www redirects to this in Vercel.
