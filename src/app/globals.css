@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-ink: #0f172a;
+  --color-muted: #475569;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 2px;
+}
+
+/* Legal pages (Privacy Policy / Terms) readable typography */
+.legal-prose h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+.legal-prose h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.legal-prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+}
+.legal-prose ul {
+  margin: 0 0 1rem 1.25rem;
+  list-style: disc;
+}
+.legal-prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+.legal-prose a {
+  color: var(--color-brand-600);
+  text-decoration: underline;
+}
+.legal-prose strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
