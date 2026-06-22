@@ -25,8 +25,8 @@ export const site = {
     country: "Malaysia",
   },
   // Used for canonical URLs, sitemap, robots, Open Graph.
-  // Replace with the verified production domain.
-  url: "https://www.doubletwinservices.com",
+  // Production domain (apex). www redirects to this in Vercel.
+  url: "https://doubletwinservices.com",
   businessActivities: [
     "E-commerce",
     "Online retail",
