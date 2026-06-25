@@ -16,8 +16,8 @@ export const site = {
   contact: {
     // Business email (active on the company domain via Zoho Mail).
     email: "admin@doubletwinservices.com",
-    phone: "+60 17-921 8556",
-    phoneHref: "+60179218556",
+    phone: "+60 17-930 8556",
+    phoneHref: "+60179308556",
     addressLine1: "No. 56A, Tingkat 1, Jalan Bahagia",
     addressLine2: "Pekan Sekinchan",
     city: "Sekinchan",
